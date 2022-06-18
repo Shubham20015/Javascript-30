@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding JS Capture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+</head>
+
+<body class="body">
+
+    <h1>Check browser console once 👀</h1>
+
+    <div class="one">
+        <div class="two">
+            <div class="three">
+            </div>
+        </div>
+    </div>
+
+    <button>Click Many Times</button>
+
+    <script>
+        console.error("Welcome to Console 🤜")
+
+        const divs = document.querySelectorAll('div');
+        const button = document.querySelector('button');
+
+        function logText(e) {
+            console.log(this.classList.value);
+            // e.stopPropagation();  // Stops capturing/bubbling
+        }
+
+        document.body.addEventListener("click", logText);
+
+        divs.forEach(div => div.addEventListener("click", logText, {
+            capture: true, // false is default
+            // once:true
+        }));
+
+        button.addEventListener("click", () => {
+            console.log("You Click only once");
+        }, {
+            once: true // Its unbind event listner from button (like remove eventListener)
+        });
+
+        // Capture -> top to bottom
+        // Bubbling -> bottom to top (It goes like parents of every present element)
+    </script>
+</body>
+
+</html>

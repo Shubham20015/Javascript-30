@@ -1,0 +1,166 @@
+html {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+  font-size: 1.3rem;
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 0.8em;
+  font-size: 3rem;
+  text-align: center;
+}
+
+nav {
+  position: relative;
+  perspective: 100;
+}
+
+.cool > li > a {
+  color: lightyellow;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cool > li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  padding: 2rem;
+  top: -2rem;
+  border-radius: 0.2rem;
+  transition: all 0.5s;
+  transform: translateY(10rem);
+  will-change: opacity;
+  display: none;
+}
+
+.trigger-enter .dropdown {
+  display: block;
+}
+
+.trigger-enter-active .dropdown {
+  opacity: 1;
+}
+
+.dropdownBackground {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background: whitesmoke;
+  border-radius: 0.5rem;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
+    0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s, opacity 0.1s, transform 0.2s;
+  transform-origin: 50% 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+.dropdownBackground.open {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background-color: whitesmoke;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.bio {
+  min-width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+
+.bio img {
+  float: left;
+  margin-right: 20px;
+  width: 10rem;
+  border-radius: 5rem;
+}
+
+.courses {
+  min-width: 30rem;
+}
+
+.courses li {
+  padding: 1rem 0;
+  display: block;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+}
+
+.courses span {
+  margin-right: 2rem;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: rgb(213, 216, 62);
+}
+
+a.button {
+  background: black;
+  display: block;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.button[href*="twitter"] {
+  background: #019fe9;
+}
+.button[href*="facebook"] {
+  background: #3b5998;
+}
+.button[href*="resources"] {
+  background: #ffc600;
+}

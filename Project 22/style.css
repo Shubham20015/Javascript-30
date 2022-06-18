@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  /* min-height: 100vh; */
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  font-family: cursive;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 660px;
+  font-size: 20px;
+  line-height: 2;
+  position: relative;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.highlight {
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid whitesmoke;
+  background: white;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 65px 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 20px;
+  color: white;
+  font-size: 18px;
+}
+
+a:hover {
+  color: black;
+}

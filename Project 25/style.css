@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 100%;
+  padding: 100px;
+}
+
+.one {
+  background: rgb(225, 226, 144);
+}
+
+.two {
+  background: rgb(168, 211, 113);
+}
+
+.three {
+  background: rgb(77, 233, 212);
+}
+
+button {
+  cursor: pointer;
+}

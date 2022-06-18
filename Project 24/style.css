@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+  background-color: rgb(245, 233, 247);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 62.5%;
+  font-weight: 300;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 55vh;
+  background: url(background.jpg) top center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3vw;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-wrap {
+  max-width: 100rem;
+  margin: 7rem auto;
+  padding: 4rem;
+  background: whitesmoke;
+  text-align: justify;
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.2s;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+li.logo {
+  max-width: 0;
+  background: pink;
+  overflow: hidden;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.fixed-nav li.logo {
+  max-width: 50rem;
+}
+
+li.logo a {
+  color: black;
+}
+
+nav a {
+  padding: 2rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.align-left {
+  float: left;
+  margin: 3rem;
+  margin-top: 0rem;
+}
+
+.align-right {
+  float: right;
+  margin: 3rem;
+}
+
+.special-space {
+  margin-bottom: 7rem;
+}
+
+footer {
+  text-align: center;
+  background: black;
+  color: rgb(255, 208, 215);
+  padding: 3rem;
+  font-size: 2rem;
+}

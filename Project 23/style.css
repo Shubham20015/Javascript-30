@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(background.jpg);
+  background-size: cover;
+}
+
+.voiceinator {
+  padding: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  position: relative;
+  background: rgba(204, 203, 137, 0.308);
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 5px 5px rgb(0 0 0 0.3);
+}
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: -2rem 0 2rem -2rem;
+  padding: 0.5rem;
+  background: #ffc600;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+  font-family: "Bad Script", cursive;
+  text-shadow: 3px 3px 0 #f3c010;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  font-size: 2rem;
+  background: #f7f7f7;
+  outline: 0;
+}
+
+textarea {
+  height: 20rem;
+  resize: none;
+}
+
+label {
+  font-size: 2rem;
+}
+
+.voiceinator button {
+  background: #ffc600;
+  border: 0;
+  cursor: pointer;
+  width: 49%;
+  float: left;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
+
+/* ScrollBar */
+textarea::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background: linear-gradient(252deg, #616161 43%, #363636 60%);
+  border-radius: 15px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(108deg, #828282 30%, #747075 46%);
+}
+textarea::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+/* Range Slider (Try to fix this but not working 😠) */
+.slider {
+  -webkit-appearance: none;
+  background: #f3c010;
+  width: 20px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 2rem;
+  padding: 3px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #cad168;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  background: #cad168;
+  cursor: pointer;
+}
