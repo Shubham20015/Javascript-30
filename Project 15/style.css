@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(48, 22, 1, 0.5), rgba(26, 53, 1, 0.4)),
+    url("bg.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 35px;
+  text-align: center;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+svg {
+  fill: white;
+  padding: 70px 20px 0;
+  width: 180px;
+}
+
+.wrapper {
+  padding: 20px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+
+.travel-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.travel-items li label {
+  text-align: left;
+}
+.travel-items li span {
+  text-align: right;
+  cursor: pointer;
+}
+.travel-items li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 12px 0;
+  font-weight: 100;
+  display: flex;
+}
+
+.travel-items label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.travel-items input {
+  display: none;
+}
+
+.travel-items input + label::before {
+  content: "💁‍♂️";
+  margin-right: 10px;
+}
+
+.travel-items input:checked + label::before {
+  content: "✅";
+}
+
+.add-items {
+  margin-top: 20px;
+}
+
+.add-items input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-items input[type="submit"] {
+  cursor: pointer;
+}
+
+.btn {
+  margin: 20px 10px 0 0;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.clear:hover {
+  background-color: rgba(255, 218, 218, 0.445);
+  border: 0.5px solid;
+}
+
+.mark:hover {
+  background-color: rgba(229, 252, 210, 0.445);
+  border: 0.5px solid;
+}
