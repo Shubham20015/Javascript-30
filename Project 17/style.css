@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://source.unsplash.com/1600x900/?galaxy,stars);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#bands {
+  list-style: inside disc;
+  background-color: #2f3542;
+  color: whitesmoke;
+  width: 400px;
+  margin: auto;
+  padding: 0;
+  font-size: 20px;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.151);
+}
+
+#bands li {
+  border-bottom: 1px solid #b3b2b2;
+  padding: 15px;
+}
+
+#bands li:last-child {
+  border-bottom: 0;
+}

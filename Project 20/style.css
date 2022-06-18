@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Caveat:wght@500&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heading {
+  margin: 2rem 0;
+}
+
+.heading h1 {
+  font-size: 5.5rem;
+  font-weight: bolder;
+  margin: 4.5rem 0 2rem;
+  font-family: "Potta One", cursive;
+  color: #3b52af;
+  text-shadow: 2px 2px 0 rgba(65, 163, 228, 0.5);
+}
+
+.heading h3 {
+  font-size: 2rem;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.Btn {
+  padding: 1rem 6rem;
+  border-radius: 2rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: "Potta One", cursive;
+  margin: 3rem 0 1rem 2.5rem;
+  background: #3b52af;
+  color: aliceblue;
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.36);
+}
+
+.Btn:hover {
+  box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.lyrics {
+  background: #4a69bd;
+  min-height: 50%;
+  height: 50vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 2rem 5rem 5rem;
+  box-shadow: -4px -2px 8px 1px rgba(0, 0, 0, 0.2);
+  color: rgba(250, 235, 215, 0.781);
+}
+
+.lyrics .originalText {
+  font-size: 2.7rem;
+  margin-bottom: 5rem;
+  color: rgba(255, 255, 255, 0.836);
+  outline: none;
+}
+
+.lyrics .matchingWords {
+  font-size: 2rem;
+  padding: 0 15rem;
+}
+@media screen and (max-width: 768px) {
+  .lyrics .matchingWords {
+    padding: 0;
+  }
+}

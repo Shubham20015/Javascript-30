@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unreal Photobooth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="photobooth">
+        <h1>📷 PhotoBooth 📷</h1>
+        <div class="controls">
+            <div class="rgb">
+                <label for="rmin">Red Min:</label>
+                <input type="range" min=0 max=255 name="rmin">
+                <label for="rmax">Red Max:</label>
+                <input type="range" min=0 max=255 name="rmax">
+                <br>
+                <label for="gmin">Green Min:</label>
+                <input type="range" min=0 max=255 name="gmin">
+                <label for="gmax">Green Max:</label>
+                <input type="range" min=0 max=255 name="gmax">
+                <br>
+                <label for="bmin">Blue Min:</label>
+                <input type="range" min=0 max=255 name="bmin">
+                <label for="bmax">Blue Max:</label>
+                <input type="range" min=0 max=255 name="bmax">
+            </div>
+            <!-- These buttons have not working for now but start working soon. -->
+            <button id="redEffectBtn" class="btn">Apply RedEffect</button>
+            <button id="rgbEffectBtn" class="btn">Apply RGBspiltEffect</button>
+        </div>
+
+        <canvas class="photo"></canvas>
+        <video class="player"></video>
+        <button class="btn" onClick="takePhoto()">Take Photo</button>
+        <h2>Collect Your Photos (Click to download)</h2>
+        <div class="strip"></div>
+    </div>
+
+    <audio class="snap" src="./snap.mp3" hidden></audio>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Shadow</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: #4a69bd;
+            font-family: 'Chonburi', cursive;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        h1 {
+            text-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1 contenteditable>🔥WOAH!</h1>
+    </div>
+
+    <script>
+        const hero = document.querySelector('.hero');
+        const text = hero.querySelector('h1');
+        const walk = 100; // means 100px
+
+        function shadowMove(e) {
+            const { offsetWidth: width, offsetHeight: height } = hero;
+            let { offsetX: x, offsetY: y } = e;
+
+            // This written to fix (0,0) offset position problem in Div
+            if (this !== e.target) {
+                x = x + e.traget.offsetLeft;
+                y = y + e.target.offsetTop;
+            }
+
+            let xWalk = Math.round((x / width * walk) - (walk / 2));
+            let yWalk = Math.round((y / height * walk) - (walk / 2));
+
+            text.style.textShadow = `${xWalk}px ${yWalk}px 0 rgba(0, 0, 0, 0.2)`;
+        }
+        hero.addEventListener('mousemove', shadowMove);
+    </script>
+</body>
+
+</html>
