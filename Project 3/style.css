@@ -1,0 +1,37 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  );
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+.h1 {
+  color: var(--base);
+  text-transform: uppercase;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Drum Kit</title>
+</head>
+
+<body>
+
+    <div class="keys">
+        <div data-type="97" class="key">
+            <kbd>A</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div data-type="115" class="key">
+            <kbd>S</kbd>
+            <span class="sound">Hihat</span>
+        </div>
+        <div data-type="100" class="key">
+            <kbd>D</kbd>
+            <span class="sound">Kick</span>
+        </div>
+        <div data-type="102" class="key">
+            <kbd>F</kbd>
+            <span class="sound">Openhat</span>
+        </div>
+        <div data-type="103" class="key">
+            <kbd>G</kbd>
+            <span class="sound">Boom</span>
+        </div>
+        <div data-type="104" class="key">
+            <kbd>H</kbd>
+            <span class="sound">Ride</span>
+        </div>
+        <div data-type="106" class="key">
+            <kbd>J</kbd>
+            <span class="sound">Snare</span>
+        </div>
+        <div data-type="107" class="key">
+            <kbd>K</kbd>
+            <span class="sound">Tom</span>
+        </div>
+        <div data-type="108" class="key">
+            <kbd>L</kbd>
+            <span class="sound">Tink</span>
+        </div>
+    </div>
+
+    <audio data-type="97" src="sounds/clap.wav"></audio>
+    <audio data-type="115" src="sounds/hihat.wav"></audio>
+    <audio data-type="100" src="sounds/kick.wav"></audio>
+    <audio data-type="102" src="sounds/openhat.wav"></audio>
+    <audio data-type="103" src="sounds/boom.wav"></audio>
+    <audio data-type="104" src="sounds/ride.wav"></audio>
+    <audio data-type="106" src="sounds/snare.wav"></audio>
+    <audio data-type="107" src="sounds/tom.wav"></audio>
+    <audio data-type="108" src="sounds/tink.wav"></audio>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
