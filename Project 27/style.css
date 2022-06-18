@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  background: url(bg.jpeg) bottom fixed;
+  background-size: cover;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.items {
+  width: 100%;
+  height: 70rem;
+  padding: 10rem;
+  margin: 0 10rem;
+  border: 0.1rem solid whitesmoke;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transform: scale(0.98);
+  transition: all 0.5s;
+  position: relative;
+  background: rgba(255, 255, 255, 0.12);
+  will-change: transform;
+  font-size: 0;
+  perspective: 50rem;
+}
+
+.items.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.item {
+  width: 20rem;
+  height: calc(100% - 4rem);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.item:nth-child(9n + 1) {
+  background: dodgerblue;
+}
+.item:nth-child(9n + 2) {
+  background: goldenrod;
+}
+.item:nth-child(9n + 3) {
+  background: paleturquoise;
+}
+.item:nth-child(9n + 4) {
+  background: gold;
+}
+.item:nth-child(9n + 5) {
+  background: cadetblue;
+}
+.item:nth-child(9n + 6) {
+  background: tomato;
+}
+.item:nth-child(9n + 7) {
+  background: lightcoral;
+}
+.item:nth-child(9n + 8) {
+  background: darkslateblue;
+}
+.item:nth-child(9n + 9) {
+  background: rebeccapurple;
+}
+
+.item:nth-child(even) {
+  transform: scaleX(1.11) rotateY(22deg);
+}
+.item:nth-child(odd) {
+  transform: scaleX(1.07) rotateY(-23deg);
+}
+
+/* width */
+.items::-webkit-scrollbar {
+  width: 1rem;
+  height: 1.1rem;
+}
+
+/* Track */
+.items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+.items::-webkit-scrollbar-thumb {
+  background: rgb(153, 153, 153);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+/* Handle on hover */
+.items::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+}

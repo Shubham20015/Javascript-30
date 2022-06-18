@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: #000 url(background.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: cursive;
+}
+
+.wrapper {
+  width: 850px;
+  display: flex;
+}
+
+video {
+  box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.speed {
+  background: #efefef;
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  margin: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: grabbing;
+}
+
+.speed-bar {
+  width: 100%;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5px;
+  color: white;
+  height: 16.3%;
+  transition: height 0.3s;
+}

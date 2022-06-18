@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.timer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.time__controls {
+  display: flex;
+}
+
+.time__controls > * {
+  flex: 1;
+}
+
+.time__controls form {
+  display: flex;
+  flex: 1;
+}
+
+.time__controls input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.timer__button {
+  padding: 1rem;
+  border: 0;
+  cursor: pointer;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.timer__button:hover,
+.timer__button:focus {
+  background: rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  position: fixed;
+  left: 10%;
+  top: 20%;
+}
+
+.display__time-left {
+  font-size: 20rem;
+  font-weight: 100;
+  margin: 0;
+  color: whitesmoke;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.display__end-time {
+  font-size: 4rem;
+  color: white;
+}

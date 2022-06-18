@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Countdown Here</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="timer">
+        <div class="time__controls">
+            <button data-time="30" class="timer__button">30 sec</button>
+            <button data-time="300" class="timer__button">Work 5</button>
+            <button data-time="900" class="timer__button">Quick 15</button>
+            <button data-time="1200" class="timer__button">Snack 20</button>
+            <button data-time="1800" class="timer__button">Lunch Break</button>
+            <form name="customForm" id="custom">
+                <input type="text" name="minutes" placeholder="Enter in minutes">
+            </form>
+        </div>
+        <img class="image-left" src="human.png" alt="Random Image">
+        <div class="display">
+            <h1 class="display__time-left">0:00</h1>
+            <p class="display__end-time">Start Now ⏱️</p>
+            <audio class="endSound" src="alarmSound.mp3"></audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
